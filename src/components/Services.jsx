@@ -17,42 +17,37 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="relative py-20 lg:py-28 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 overflow-hidden">
+    <section id="services" className="relative py-16 md:py-20 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-stone-500/5 to-transparent"></div>
       <div className="absolute top-20 left-10 w-72 h-72 bg-stone-500/5 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
         {/* Section Header */}
-        <div className="text-center mb-16 lg:mb-20">
-          <div className="inline-flex items-center gap-2 bg-stone-800/50 backdrop-blur-sm border border-stone-700 rounded-full px-5 py-2.5 mb-6">
-            <FaRocket className="w-5 h-5 text-stone-400" />
-            <span className="text-base sm:text-lg text-stone-300 font-medium">
+        <div className="text-center mb-12 md:mb-14">
+          <div className="inline-flex items-center gap-2 bg-stone-800/50 backdrop-blur-sm border border-stone-700 rounded-full px-4 py-2 mb-4 sm:mb-5">
+            <FaRocket className="w-4 h-4 text-stone-400" />
+            <span className="text-xs sm:text-sm text-stone-300 font-medium">
               {t('our-services') || 'Nos Services'}
             </span>
           </div>
           
-          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-5">
             {t('our-services')}
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-stone-400 to-stone-600 mt-2">
-              {t('excellence') || 'Excellence'}
-            </span>
           </h2>
           
-          <p className="text-xl sm:text-2xl lg:text-2xl text-stone-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
             {t('services-description') || 'Des solutions complètes pour transformer vos idées en réalité digitale.'}
           </p>
-          
-          <div className="w-24 h-1 bg-gradient-to-r from-stone-400 to-stone-600 mx-auto rounded-full mt-8"></div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group relative bg-gradient-to-br from-stone-800/60 to-stone-900/60 backdrop-blur-xl rounded-3xl p-8 lg:p-10 border border-stone-700/50 hover:border-stone-500/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-stone-500/20"
+              className="group relative bg-gradient-to-br from-stone-800/60 to-stone-900/60 backdrop-blur-xl rounded-2xl p-5 sm:p-6 border border-stone-700/50 hover:border-stone-500/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-stone-500/20"
               style={{ 
                 animationDelay: `${index * 100}ms`,
                 transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)'

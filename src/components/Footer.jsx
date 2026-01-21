@@ -32,10 +32,10 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { href: '#home', label: 'home' },
-    { href: '#about', label: 'about' },
-    { href: '#services', label: 'services' },
-    { href: '#contact', label: 'contact' }
+    { href: '/', label: 'home' },
+    { href: '/about', label: 'about' },
+    { href: '/services', label: 'services' },
+    { href: '/contact', label: 'contact' }
   ];
 
   return (

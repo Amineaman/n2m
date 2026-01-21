@@ -5,7 +5,9 @@ import { LanguageProvider } from './contexts/LanguageContext.jsx';
 import { useTheme } from './hooks/useTheme.js';
 import Navbar from './components/Navbar.jsx';
 import Home from './pages/Home.jsx';
+import AboutPage from './pages/AboutPage.jsx';
 import ServicesPage from './pages/ServicesPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 import Footer from './components/Footer.jsx';
 
 function AppContent() {
@@ -17,7 +19,9 @@ function AppContent() {
       <main className="relative">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
       </main>
